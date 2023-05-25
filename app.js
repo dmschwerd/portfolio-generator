@@ -1,4 +1,3 @@
-const fs = require('fs');
 const inquirer = require('inquirer');
 const generatePage = require('./src/page-template');
 const {writeFile, copyFile} = require('./utils/generate-site.js');
@@ -89,7 +88,7 @@ Add a New Project
         type: 'checkbox',
         name: 'languages',
         message: 'What did you make this project with? (Check all that apply)',
-        choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
+        choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node', 'Express.js', 'SQL', 'NoSQL', 'React']
       },
       {
         type: 'input',
